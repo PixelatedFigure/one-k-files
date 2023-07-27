@@ -1,2 +1,5 @@
 # one-k-files
-This repository for tech community case studies only.
+
+Simple copy files into subdirectory app.
+
+run command: python main.py
