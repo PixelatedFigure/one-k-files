@@ -4,13 +4,13 @@ import shutil
 dir = "files/"
 
 for file in os.listdir(dir):
-    dir_name = file.split('-', 1)[0]
+    lang = file.split('-', 1)[0]
 
-    dir_path = dir + dir_name
+    to = dir + lang
     
-    if not os.path.exists(dir_path):
-        os.makedirs(dir_path)
+    if not os.path.exists(to):
+        os.makedirs(to)
 
-    if os.path.exists(dir_path):
+    if os.path.exists(to):
         file_path = dir + file
-        shutil.move(file_path, dir_path)
+        shutil.move(file_path, to)
